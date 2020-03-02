@@ -1,0 +1,45 @@
+@size: 50px;
+.all{
+	width: 200px;
+	height: 400px;
+	border: 1px solid #000;
+		}
+
+.one {
+	position: relative;
+	background-color: yellow;
+	.all
+}
+
+.two {
+	position: absolute;
+	top: @size;
+	left: @size;
+	background-color: pink;
+	.all
+}
+.three {
+	position: absolute;
+	top: @size*2;
+	left: @size*2;
+	background-color: orange;
+	.all
+}
+.four {
+	position: absolute;
+	top: @size*3;
+	left: @size*3;
+	background-color: red;
+	.all
+}
+
+.five{
+	position: absolute;
+	top: @size*4;
+	left: @size*4;
+	background-color: green;
+	.all
+}
+.one:hover, .two:hover, .three:hover, .four:hover {
+	z-index: 6;
+}
